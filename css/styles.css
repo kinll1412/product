@@ -1,0 +1,446 @@
+/* Container holding the image and the text */
+.amount-cart-container {
+  position: relative;
+  text-align: right;
+  color: black;
+}
+
+a.cart:hover {
+  text-decoration: none;
+  color: #d60e96;
+}
+
+a.cart .cart-basket {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 2vw;
+  height: 2vw;
+  color: #fff;
+  background-color: #418deb;
+  border-radius: 50%;
+}
+
+a.cart:hover .cart-basket:hover {
+  color: white;
+  background-color: #d60e96;
+
+
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.user-login {
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  border-radius: .25rem;
+  padding: 5px 5px;
+
+}
+.user-login a.hover,.user-login a.active{
+  color: red;
+
+}
+.logo {
+  height: auto;
+  width: 5%;
+  min-width: 60px;
+  margin-left: 2%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+}
+
+nav {
+  background-color: #000033;
+  width: 100%;
+}
+.nav-login{
+  height: 100px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+
+}
+
+.nav-item {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background: white;
+  color: black;
+
+
+}
+
+.nav-item.active,
+.nav-item:hover a {
+  color: black;
+
+}
+
+label.logo-name {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#toggle-check {
+  display: none;
+}
+
+.checkbtn {
+  display: none;
+}
+
+@media (max-width:992px) {
+  label.logo-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .nav-item {
+    margin-top: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+
+}
+
+@media (max-width:830px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    background: #112D4E;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+    padding-bottom: 20px;
+
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-item.active,
+  .nav-item:hover {
+    color: goldenrod;
+    background: none;
+
+  }
+
+  .nav-item.active,
+  .nav-item:hover a {
+    color: goldenrod;
+    background: none;
+
+  }
+
+  #toggle-check:checked~.nav-menu {
+    left: 0;
+  }
+
+}
+
+.banner-image {
+  background-image: url("background-banner.jpg");
+  height: auto;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
+}
+
+.hero-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+.hero-text h1 {
+  padding-top: 20px;
+  color: goldenrod;
+}
+
+.hero-text p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.hero-text button {
+  display: inline-block;
+
+  margin-bottom: 30px;
+
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.hero-text button:hover,
+.hero-text button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.hero-text button:hover {
+  transform: translateY(-1px);
+}
+
+.hero-text button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-height: 320px;
+  overflow: scroll;
+  overflow-x: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+/* product table*/
+.product-data td {
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* register description */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active-cart {
+  color: white;
+  border-color: green;
+  background-color: green;
+
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
